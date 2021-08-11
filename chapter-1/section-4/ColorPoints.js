@@ -55,6 +55,7 @@ void (function () {
 
   if (!gl) {
     console.log("Failed to get the rendering context for webgl")
+    return
   }
 
   if (!initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE)) {
